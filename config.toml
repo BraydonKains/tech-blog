@@ -1,0 +1,24 @@
+baseURL = "https://www.braydonkains.github.io"
+languageCode = "en-us"
+title = "Braydon Tries to Code Good"
+
+theme = "m10c"
+paginate = 8
+
+[params]
+  author = "Braydon Kains"
+  description = "I am a software developer from Kitchener, Ontario. In this blog you will find my thoughts and ramblings about code quality, developer experience, and my various technology adventures!"
+  menu_item_separator = " - "
+  avatar = "/avatar.jpg"
+  favicon = ""
+
+  [[params.social]]
+    icon = "github"
+    name = "BraydonKains on GitHub"
+    url = "https://github.com/BraydonKains"
+
+  [[params.social]]
+    icon = "twitter"
+    name = "@BKains on Twitter"
+    url = "https://twitter.com/BKains"
+
