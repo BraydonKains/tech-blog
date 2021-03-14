@@ -7,7 +7,7 @@ paginate = 8
 
 [params]
   author = "Braydon Kains"
-  description = "I am a software developer from Kitchener, Ontario. In this blog you will find my thoughts and ramblings about code quality, developer experience, and my various technology adventures!"
+  description = "Hi! My name is Braydon Kains. I am a software developer from Kitchener, Ontario. In this blog you will find my thoughts and ramblings about code quality, developer experience, and various technology adventures!"
   menu_item_separator = " - "
   avatar = "/avatar.jpg"
   favicon = ""
