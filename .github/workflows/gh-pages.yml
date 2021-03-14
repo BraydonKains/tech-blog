@@ -21,7 +21,7 @@ jobs:
       # extended: true
 
     - name: Build
-      run: hugo -D -t
+      run: hugo -D -t m10c
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
