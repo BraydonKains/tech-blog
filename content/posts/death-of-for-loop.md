@@ -1,6 +1,6 @@
 +++
 title = "The death of the for loop?"
-tags = ["code-quality", "functional"]
+tags = ["code-quality", "opinion", "functional"]
 date = "2021-03-13"
 author = "Braydon Kains"
 +++
