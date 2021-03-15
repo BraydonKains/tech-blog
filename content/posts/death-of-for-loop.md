@@ -22,7 +22,7 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-I still think this should almost always the first loop a new developer learns. It's easy to understand; perform the code inside the braces 10 times. Once the developer gets to arrays, and they learn that arrays are addressed 0, 1, 2 etc. to retrieve data, the use case of `for` loops suddenly clicks:
+I still think this should be the first loop a new developer learns. It's easy to understand; perform the code inside the braces 10 times. Once the developer gets to arrays, and they learn that arrays are addressed 0, 1, 2 etc. to retrieve data, the use case of `for` loops suddenly clicks:
 
 ```javascript
 const arr = [1, 2, 3, 4, 5];
