@@ -18,11 +18,11 @@ I'll start by laying out the traditional `for` loop everyone knows and loves. Wh
 
 ```javascript
 for (let i = 0; i < 10; i++) {
-	// Code to perform on each iteration
+	// Code to execute on each iteration
 }
 ```
 
-I still think this should be the first loop a new developer learns. It's easy to understand; perform the code inside the braces 10 times. Once the developer gets to arrays, and they learn that arrays are addressed 0, 1, 2 etc. to retrieve data, the use case of `for` loops suddenly clicks:
+I still think this should be the first loop a new developer learns. It's easy to understand; execute the code inside the braces 10 times. Once the developer gets to arrays, and they learn that arrays are addressed 0, 1, 2 etc. to retrieve data, the use case of `for` loops suddenly clicks:
 
 ```javascript
 const arr = [1, 2, 3, 4, 5];
@@ -32,7 +32,7 @@ for (let i = 0; i < arr.length; i++) {
 ```
 
 "The loop runs from 0 to 4, so I can use `i` to choose an item from the array on each iteration of the loop! Now I understand what loops are for!" - A dramatic re-enactment of me getting to the array lesson in my first coding book, feeling like a genius.  
-It's understandable why a developer would reach for this by default; any professional developer is guaranteed to have written hundreds of `for` loops exactly like this throughout their career, so there is rarely anything new for a developer to learn or understand.
+It's understandable why a developer would reach for this by default; any professional developer is certain to have written hundreds of `for` loops exactly like this throughout their career, so there is rarely anything new for a developer to learn or understand.
 
 Why fix what isn't broken?
 
@@ -49,7 +49,7 @@ for (let i = 0; i < arr.length; i++) {
 ```
 
 This code isn't inherently wrong, but doesn't it seem like a waste to write a traditional `for` loop just to assign the value to a local constant variable every time? We don't actually need to modify the source collection, we just need to iterate through it and read each value individually.  
-Enter the `foreach` loop. This style of loop cuts out that boilerplate step that assigs a local constant in each iteration of your loop. Instead of each loop iteration having an index, each loop iteration will have an item. In JavaScript, this is implemented using the `for...of` syntax.
+Enter the `foreach` loop. This style of loop cuts out that boilerplate step that assigns a local constant in each iteration of your loop. Instead of each loop iteration having an index, each loop iteration will have an item. In JavaScript, this is implemented using the `for...of` syntax.
 
 ```javascript
 const arr = [1, 2, 3, 4, 5];
@@ -150,7 +150,7 @@ This one may be the hardest to sell of the 4 HOFs we're exploring.
 
 ```javascript
 const arr = [1, 2, 3, 4, 5];
-const sum = 0;
+let sum = 0;
 for (const value of arr) {
 	sum += value;
 }
@@ -172,7 +172,7 @@ Building a result that combines all the elements in a collection is a great use 
 
 ```javascript
 const arr = [1, 2, 5, 4, 3];
-const max = Number.MIN_VALUE;
+let max = Number.MIN_VALUE;
 for (const value of arr) {
 	if (value > max) {
 		max = value;
